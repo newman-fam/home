@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Вступай в самую лучшую семью на Majestic RP."/>
+  <title>Washington Empire</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
+</head>
+<body>
+  <header class="site-header">
+    <img src="images/logo.png" class="site-logo" alt="Логотип" />
+    <h1 class="site-title">Washington Empire</h1>
+    <nav>
+      <a href="#about">О семье</a>
+      <a href="#why-join">Преимущества</a>
+      <a href="#join">Заявка</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+  </header>
+  <section class="hero">
+    <img src="images/banner.jpg" alt="Washington Empire" class="hero-bg" />
+    <div class="hero-content">
+      <h2>Добро пожаловать в Washington Empire!</h2>
+      <p>Самая сплочённая и могущественная семья на Majestic RP</p>
+      <a href="#join" class="main-btn">Вступить в семью</a>
+    </div>
+  </section>
+
+  <main>
+    <section id="about" class="section about">
+      <div class="container">
+        <h2>О семье</h2>
+        <p>Washington Empire — это место, где каждый становится частью большой истории, команды, судьбы. Тебя ждут настоящие братья и сёстры, уникальная атмосфера и возможность изменить сервер вместе с нами.</p>
+      </div>
+    </section>
+
+    <section id="why-join" class="section benefits">
+      <div class="container">
+        <h2>Почему именно мы?</h2>
+        <div class="benefits-list">
+          <div class="benefit">
+            <i class="fa-solid fa-users"></i>
+            <h3>Семейная поддержка</h3>
+            <p>Ты не останешься один. Мы поможем и научим всему.</p>
+          </div>
+          <div class="benefit">
+            <i class="fa-solid fa-handshake"></i>
+            <h3>Единые цели</h3>
+            <p>Работаем на общий результат — ради семьи.</p>
+          </div>
+          <div class="benefit">
+            <i class="fa-solid fa-trophy"></i>
+            <h3>Достижения и победы</h3>
+            <p>Мы лидируем в структуре, государстве и криминале.</p>
+          </div>
+          <div class="benefit">
+            <i class="fa-solid fa-shield-halved"></i>
+            <h3>Честность и безопасность</h3>
+            <p>Здесь твои интересы под защитой.</p>
+          </div>
+          <div class="benefit">
+            <i class="fa-solid fa-brain"></i>
+            <h3>Рост и развитие</h3>
+            <p>Реализуй потенциал и стань легендой сервера.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="join" class="section join">
+      <div class="container">
+        <h2>Вступить в семью</h2>
+        <p>Заполни заявку — наш представитель свяжется с тобой в Discord.</p>
+        <form id="join-form" autocomplete="off">
+          <div class="form-row">
+            <input type="text" name="name" placeholder="Имя" maxlength="50" required />
+            <input type="number" name="age" placeholder="Возраст" min="14" max="99" required />
+          </div>
+          <input type="text" name="about" placeholder="Коротко о себе" maxlength="200" required />
+          <input type="text" name="discord" placeholder="Discord (например: Name#1234)" maxlength="50" required />
+          <input type="url" name="statpic" placeholder="Ссылка на скриншот статиков" maxlength="150" required />
+          <select name="direction" required>
+            <option value="">Куда хочешь: криминал или гос?</option>
+            <option value="crime">Криминал</option>
+            <option value="gov">Госструктура</option>
+          </select>
+          <button type="submit" class="main-btn">Отправить</button>
+        </form>
+        <div id="form-success" class="form-success" style="display:none;">
+          Заявка отправлена! Ожидайте, с вами свяжутся в Discord.
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="section faq">
+      <div class="container">
+        <h2>FAQ</h2>
+        <div class="faq-list">
+          <div class="faq-item">
+            <button class="faq-question">Как вступить в Washington Empire?</button>
+            <div class="faq-answer">
+              Заполните заявку на сайте. После модерации с вами свяжется лидер или представитель в Discord.
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">Есть ли возрастные ограничения?</button>
+            <div class="faq-answer">
+              Минимальный возраст — 14 лет.
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">Что такое статический ID?</button>
+            <div class="faq-answer">
+              Это ваш идентификатор в игре. Его видно в личном кабинете или при /stats.
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">Обязательно ли менять фамилию?</button>
+            <div class="faq-answer">
+              Да, для полноценного членства в семье — да.
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">В чём преимущества для членов семьи?</button>
+            <div class="faq-answer">
+              Льготы, поддержка, продвижение, возможность карьерного роста, личная охрана, участие в RP-мероприятиях.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2024 Newman Family. Все права защищены.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
